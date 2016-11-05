@@ -1,0 +1,13 @@
+<h1>Movies list</h1>
+
+<h2><%= @question + @answer %></h2>
+
+<% @movies.each do |movie| %>
+		<% if (movie.year == @answer)  %>
+			<span>
+				<a href="#"><img src="<%= movie.poster %>" onClick="alert('GUAY DEL PARAGUAY!')" style="width:150px;"></a>
+			</span>
+		<% else %>
+			<span><a href="#"><img src="<%= movie.poster %>" onClick="alert('MEH')" style="width:150px;"></a></span>
+		<% end %>
+ <% end %>

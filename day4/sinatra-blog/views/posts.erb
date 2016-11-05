@@ -1,0 +1,13 @@
+<h1>Welcome to the TodoList</h1>
+
+<ul>
+<% @posts_to_display.each_with_index do |post, index| %>
+	<li>
+		<div><a href="/show_post/<%= index %>"><h2><%= post.title %></h2></a> by <%= post.author %></div>
+ 			<span class="one"><%= post.text %></span>
+ 			 <span class="one"><%= post.date %></span>
+	</li>
+<% end %>
+</ul>
+
+<a href="/new_post">Add New Post</a>

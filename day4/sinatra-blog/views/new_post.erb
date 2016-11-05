@@ -1,0 +1,14 @@
+<h1>Add Post</h1>
+  <form action="/create_post" method="POST">
+  	<label>Title</label>
+    <input type="text" name="title" required>
+    <label>Post text</label>
+    <input type="text" name="text" required>
+    <div>
+	    <label>Author</label>
+	    <input type="text" name="author" required>
+	    <label>Category</label>
+	    <input type="text" name="category" required>
+    </div>
+    <button type="submit" name="action" value="add">Add</button>
+  </form>
